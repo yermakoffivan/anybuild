@@ -1,5 +1,65 @@
 # Changelog
 
+## [0.34.0](https://github.com/yermakoffivan/anybuild/compare/v0.33.0...v0.34.0) (2026-10-07)
+
+
+### Features
+
+* add shared runtime dependencies and Sendmail support ([#132](https://github.com/yermakoffivan/anybuild/issues/132)) ([a893d10](https://github.com/yermakoffivan/anybuild/commit/a893d1005135bad82d90530f1b9402eebf43cca2))
+* Add support for multiple deployment platforms ([#98](https://github.com/yermakoffivan/anybuild/issues/98)) ([53871ae](https://github.com/yermakoffivan/anybuild/commit/53871ae2ad123343ba80df69a1b24647862a0e6e))
+* allow passing build env vars with --env ([#111](https://github.com/yermakoffivan/anybuild/issues/111)) ([93982ae](https://github.com/yermakoffivan/anybuild/commit/93982ae0f3ad3d91bc3bcfa1cdd30f24ea4812a2))
+* allow passing wasix python registry ([#93](https://github.com/yermakoffivan/anybuild/issues/93)) ([54d68d6](https://github.com/yermakoffivan/anybuild/commit/54d68d619d918db48e869aee83db1ab96c17c31a))
+* Node python improvements ([#67](https://github.com/yermakoffivan/anybuild/issues/67)) ([e76e8e1](https://github.com/yermakoffivan/anybuild/commit/e76e8e148029891ceefa3ea1ec033345c03c9751))
+* open backend version update PRs after Anybuild releases ([#122](https://github.com/yermakoffivan/anybuild/issues/122)) ([ed4427a](https://github.com/yermakoffivan/anybuild/commit/ed4427a3b1e2a8a8774024d7acabd83cfb2a7305))
+* **release:** GH Releases of binaries & installer ([#70](https://github.com/yermakoffivan/anybuild/issues/70)) ([7bc6109](https://github.com/yermakoffivan/anybuild/commit/7bc61098f213df07de7431a7601164596453b1c2))
+* support external EdgeJS engine and test both runtimes ([#124](https://github.com/yermakoffivan/anybuild/issues/124)) ([fe6aca9](https://github.com/yermakoffivan/anybuild/commit/fe6aca9d91d4ea04675d8a1e158a1c600c5ecd79))
+* support Typecho with persistent Wasmer storage ([#126](https://github.com/yermakoffivan/anybuild/issues/126)) ([839939e](https://github.com/yermakoffivan/anybuild/commit/839939e63f11702ee21e736b7e6ed527ab4107de))
+* update phpix to 0.3.0-rc.2 ([6303bd5](https://github.com/yermakoffivan/anybuild/commit/6303bd5ef2ccfc9b7b733db5067a041e462750b3))
+
+
+### Bug Fixes
+
+* add sqlite headers for Django Docker builds, latest phpix ([#47](https://github.com/yermakoffivan/anybuild/issues/47)) ([2adae4c](https://github.com/yermakoffivan/anybuild/commit/2adae4ccd2cc194a5161733cc47b4300b07a2af0))
+* bump EdgeJS QuickJS to 0.0.6 ([33ee878](https://github.com/yermakoffivan/anybuild/commit/33ee878264efd72076577d570b1af711054c2176))
+* default Drupal to PHPix and export pnpm workspaces ([#121](https://github.com/yermakoffivan/anybuild/issues/121)) ([2729bb1](https://github.com/yermakoffivan/anybuild/commit/2729bb164e1bbf509b7fb5290e0f3cea0149d447))
+* Fix release please and improved WordPress theme/plugins support ([4578f85](https://github.com/yermakoffivan/anybuild/commit/4578f85800f82c9e44c699944f5ffab44e1f0247))
+* Fix some templates when using subdirs ([#105](https://github.com/yermakoffivan/anybuild/issues/105)) ([780bb94](https://github.com/yermakoffivan/anybuild/commit/780bb94ce0e737a4e1b9a16af82d013b47cb098c))
+* Fixed config updating for Wasmer ([5a582bc](https://github.com/yermakoffivan/anybuild/commit/5a582bc0a709a59d324530dbfbae3837e35d6cef))
+* generate safe internal Docker image names ([#119](https://github.com/yermakoffivan/anybuild/issues/119)) ([7502b17](https://github.com/yermakoffivan/anybuild/commit/7502b17de404c0ae7866e6376d7dbcc17d07ddfe))
+* infer Node build commands from the resolved package manager ([#130](https://github.com/yermakoffivan/anybuild/issues/130)) ([b455ed7](https://github.com/yermakoffivan/anybuild/commit/b455ed765aadaa8d43323f30488969980ec1e263))
+* **node-static:** prefer framework output directory ([#78](https://github.com/yermakoffivan/anybuild/issues/78)) ([b9333c9](https://github.com/yermakoffivan/anybuild/commit/b9333c9e0fe86d8e839340848a7fea03b50df4b9))
+* pin pnpm version if one is not explicitly specified ([#116](https://github.com/yermakoffivan/anybuild/issues/116)) ([a3bfbaf](https://github.com/yermakoffivan/anybuild/commit/a3bfbaf90d70d24448450b0b2aa5b1a63449c67d))
+* preserve Python app module names ([#128](https://github.com/yermakoffivan/anybuild/issues/128)) ([5cc24bf](https://github.com/yermakoffivan/anybuild/commit/5cc24bfc40b80ee55b9a7c3de1515dc026687afe))
+* **python:** improve WASIX packaging, MCP support, and source staging ([#115](https://github.com/yermakoffivan/anybuild/issues/115)) ([46b93f3](https://github.com/yermakoffivan/anybuild/commit/46b93f3e8d220a1c37aa2087ca51eca756cdc690))
+* **release:** preserve release boundary and add CRA e2e fixture ([c516f2f](https://github.com/yermakoffivan/anybuild/commit/c516f2ff8e006fffe1adbd544999e36370036bb5))
+* **release:** prevent draft release PR race ([714d739](https://github.com/yermakoffivan/anybuild/commit/714d7394b449ae2a56f8d1531be42d5c397aca67))
+* **release:** prevent draft release PR race ([7313b89](https://github.com/yermakoffivan/anybuild/commit/7313b895d6ba21855fe487994b9b990609bce113))
+* **release:** support linked Cargo workspace versions ([2668815](https://github.com/yermakoffivan/anybuild/commit/26688154a06f89c4a3c3d666b40bece2bc7f7ed8))
+* **release:** track a single workspace release ([20c373d](https://github.com/yermakoffivan/anybuild/commit/20c373db707de973b7d5a86e3c6c5eabb0b30ecf))
+* Respect gitignore in Node-static subdirectory builds ([#109](https://github.com/yermakoffivan/anybuild/issues/109)) ([699b6f6](https://github.com/yermakoffivan/anybuild/commit/699b6f6ba673c71b75e75e5ed72998ab02e0326f))
+* restore language installation command ([#91](https://github.com/yermakoffivan/anybuild/issues/91)) ([c98324e](https://github.com/yermakoffivan/anybuild/commit/c98324e78ec052b76e7bdf8e2d7be34e7366063d))
+* Speed up PyPI releases ([f9c8164](https://github.com/yermakoffivan/anybuild/commit/f9c81645286d8c90be5856c7152a14ae49320903))
+* support Composer projects without lock files ([fc9ccdc](https://github.com/yermakoffivan/anybuild/commit/fc9ccdcc0a3c8d70a7744ae64c33501111651236))
+* support Composer projects without lock files ([000c456](https://github.com/yermakoffivan/anybuild/commit/000c4560bfd56048cc1b75dd4bf5d9923fb7335e))
+* trigger patch release ([2f151d3](https://github.com/yermakoffivan/anybuild/commit/2f151d39042531e9a0cba4848706eab5db87b6b0))
+* Trying to fix release please ([274cc37](https://github.com/yermakoffivan/anybuild/commit/274cc37629c0d322267bf130003175c0e0bb5a87))
+* Update Edge.js to 0.1.3 ([a0bd0dd](https://github.com/yermakoffivan/anybuild/commit/a0bd0ddb9216359e9e9184d97f37a2457c298ba6))
+* Update edgejs and phpix versions to latest ([1b2f29a](https://github.com/yermakoffivan/anybuild/commit/1b2f29af747e5b0eb02c5087b37af78e8ad255d6))
+* update EdgeJS dependency to 0.1.1 ([#87](https://github.com/yermakoffivan/anybuild/issues/87)) ([6be5fd5](https://github.com/yermakoffivan/anybuild/commit/6be5fd5908869e2b7bcec96987b0ac50c22c36d8))
+* update phpix to 0.3.0 ([#123](https://github.com/yermakoffivan/anybuild/issues/123)) ([958463f](https://github.com/yermakoffivan/anybuild/commit/958463f1237ebec35d7eacb6f10a95de56f166b4))
+* update phpix to 0.3.0-rc.5 ([ea1a475](https://github.com/yermakoffivan/anybuild/commit/ea1a4756f95fbc3098952c9d650ac5a8ce624850))
+* Updated edgejs dependency to 0.1.0 ([48e4c3a](https://github.com/yermakoffivan/anybuild/commit/48e4c3ae33f153a206f77ee0168d4d8826218f97))
+* Updated phpix to 0.3.0-rc.1 ([85e0eb2](https://github.com/yermakoffivan/anybuild/commit/85e0eb2805dee4160186a5a07bd35690c09e3615))
+* Updated phpix to 0.3.0-rc.1 & improved CI speed ([99e631d](https://github.com/yermakoffivan/anybuild/commit/99e631d2c9d6987a276eeab6967e21aff3d6c822))
+* use next-bundle 1.0.0 for Next.js builds ([f470f87](https://github.com/yermakoffivan/anybuild/commit/f470f87104f13ff6aea4128c8bf73a1ec513f997))
+* use the flag as precompile_edgejs ([76fa80c](https://github.com/yermakoffivan/anybuild/commit/76fa80c2dbae903bb645d79d91cee6d320d4008e))
+* Wasmer build annotations ([#64](https://github.com/yermakoffivan/anybuild/issues/64)) ([c433db7](https://github.com/yermakoffivan/anybuild/commit/c433db7f4edc9d24585e0b9ef2760613dc7359a1))
+* **wasmer:** pass application env via dotenv file ([#113](https://github.com/yermakoffivan/anybuild/issues/113)) ([7b08d7b](https://github.com/yermakoffivan/anybuild/commit/7b08d7b1696945ab5c60c2c0f118ee2b6c80690b))
+* **wasmer:** update edgejs-quickjs to 0.0.7 ([95d7c54](https://github.com/yermakoffivan/anybuild/commit/95d7c543178a5195b6208b7e30be578f48d1f997))
+* **wasmer:** update edgejs-quickjs to 0.2.0 ([#107](https://github.com/yermakoffivan/anybuild/issues/107)) ([31c20da](https://github.com/yermakoffivan/anybuild/commit/31c20dad9cc8170899640d9fb0219efafed57cc0))
+* WP setup failing on rewrite structure ([f487537](https://github.com/yermakoffivan/anybuild/commit/f487537cff26e57d6cef7951c45c53a0b82202b4))
+* WP setup failing on rewrite structure ([54ddafe](https://github.com/yermakoffivan/anybuild/commit/54ddafe609697926f965f699b80b522fffc99f48))
+
 ## [0.33.0](https://github.com/wasmerio/anybuild/compare/v0.32.2...v0.33.0) (2026-10-05)
 
 
